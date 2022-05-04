@@ -19,6 +19,10 @@
 		1F653D0228226CED00D91F92 /* GoodJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */; };
 		1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */; };
 		1F653D062822791800D91F92 /* GoodJokesViewControllerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */; };
+		1F653D0C28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0B28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift */; };
+		1F653D0E2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */; };
+		1F653D102822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */; };
+		1F653D122822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewController.swift; sourceTree = "<group>"; };
 		1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewControllerAnswer.swift; sourceTree = "<group>"; };
 		1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewControllerQuestion.swift; sourceTree = "<group>"; };
+		1F653D0B28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesTwoViewControllerQuestion.swift; sourceTree = "<group>"; };
+		1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesTwoViewControllerAnswer.swift; sourceTree = "<group>"; };
+		1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokeThreeViewControllerQuestion.swift; sourceTree = "<group>"; };
+		1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokeThreeViewControllerAnswer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 				1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */,
 				1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */,
 				1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */,
+				1F653D0B28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift */,
+				1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */,
+				1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */,
+				1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -269,10 +281,14 @@
 			files = (
 				1F653D062822791800D91F92 /* GoodJokesViewControllerQuestion.swift in Sources */,
 				1F653D0228226CED00D91F92 /* GoodJokesViewController.swift in Sources */,
+				1F653D0C28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift in Sources */,
 				1F1463462822499D008055FC /* ViewController.swift in Sources */,
 				1F1463422822499D008055FC /* AppDelegate.swift in Sources */,
+				1F653D122822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift in Sources */,
 				1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */,
+				1F653D102822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift in Sources */,
 				1F1463442822499D008055FC /* SceneDelegate.swift in Sources */,
+				1F653D0E2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
