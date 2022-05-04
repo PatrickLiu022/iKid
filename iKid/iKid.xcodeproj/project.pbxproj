@@ -16,6 +16,9 @@
 		1F1463592822499E008055FC /* iKidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1463582822499E008055FC /* iKidTests.swift */; };
 		1F1463632822499E008055FC /* iKidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1463622822499E008055FC /* iKidUITests.swift */; };
 		1F1463652822499E008055FC /* iKidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1463642822499E008055FC /* iKidUITestsLaunchTests.swift */; };
+		1F653D0228226CED00D91F92 /* GoodJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */; };
+		1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */; };
+		1F653D062822791800D91F92 /* GoodJokesViewControllerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1F14635E2822499E008055FC /* iKidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1463622822499E008055FC /* iKidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKidUITests.swift; sourceTree = "<group>"; };
 		1F1463642822499E008055FC /* iKidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKidUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewController.swift; sourceTree = "<group>"; };
+		1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewControllerAnswer.swift; sourceTree = "<group>"; };
+		1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesViewControllerQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1F14634A2822499E008055FC /* Assets.xcassets */,
 				1F14634C2822499E008055FC /* LaunchScreen.storyboard */,
 				1F14634F2822499E008055FC /* Info.plist */,
+				1F653D0128226CED00D91F92 /* GoodJokesViewController.swift */,
+				1F653D03282272F100D91F92 /* GoodJokesViewControllerAnswer.swift */,
+				1F653D052822791800D91F92 /* GoodJokesViewControllerQuestion.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F653D062822791800D91F92 /* GoodJokesViewControllerQuestion.swift in Sources */,
+				1F653D0228226CED00D91F92 /* GoodJokesViewController.swift in Sources */,
 				1F1463462822499D008055FC /* ViewController.swift in Sources */,
 				1F1463422822499D008055FC /* AppDelegate.swift in Sources */,
+				1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */,
 				1F1463442822499D008055FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
