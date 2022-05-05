@@ -23,6 +23,13 @@
 		1F653D0E2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */; };
 		1F653D102822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */; };
 		1F653D122822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */; };
+		1F653D142823200D00D91F92 /* PunJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D132823200D00D91F92 /* PunJokeViewController.swift */; };
+		1F653D162823BB4500D91F92 /* PunJokeOneQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D152823BB4400D91F92 /* PunJokeOneQuestionViewController.swift */; };
+		1F653D222823BC1300D91F92 /* PunJokeOneAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D212823BC1300D91F92 /* PunJokeOneAnswerViewController.swift */; };
+		1F653D242823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D232823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift */; };
+		1F653D262823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D252823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift */; };
+		1F653D282823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D272823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift */; };
+		1F653D2A2823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D292823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokesTwoViewControllerAnswer.swift; sourceTree = "<group>"; };
 		1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokeThreeViewControllerQuestion.swift; sourceTree = "<group>"; };
 		1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJokeThreeViewControllerAnswer.swift; sourceTree = "<group>"; };
+		1F653D132823200D00D91F92 /* PunJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeViewController.swift; sourceTree = "<group>"; };
+		1F653D152823BB4400D91F92 /* PunJokeOneQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeOneQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D212823BC1300D91F92 /* PunJokeOneAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeOneAnswerViewController.swift; sourceTree = "<group>"; };
+		1F653D232823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeTwoQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D252823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeTwoAnswerViewController.swift; sourceTree = "<group>"; };
+		1F653D272823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeThreeQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D292823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeThreeAnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,13 @@
 				1F653D0D2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift */,
 				1F653D0F2822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift */,
 				1F653D112822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift */,
+				1F653D132823200D00D91F92 /* PunJokeViewController.swift */,
+				1F653D152823BB4400D91F92 /* PunJokeOneQuestionViewController.swift */,
+				1F653D212823BC1300D91F92 /* PunJokeOneAnswerViewController.swift */,
+				1F653D232823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift */,
+				1F653D252823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift */,
+				1F653D272823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift */,
+				1F653D292823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -284,10 +305,17 @@
 				1F653D0C28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift in Sources */,
 				1F1463462822499D008055FC /* ViewController.swift in Sources */,
 				1F1463422822499D008055FC /* AppDelegate.swift in Sources */,
+				1F653D142823200D00D91F92 /* PunJokeViewController.swift in Sources */,
+				1F653D162823BB4500D91F92 /* PunJokeOneQuestionViewController.swift in Sources */,
 				1F653D122822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift in Sources */,
 				1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */,
+				1F653D262823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift in Sources */,
 				1F653D102822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift in Sources */,
 				1F1463442822499D008055FC /* SceneDelegate.swift in Sources */,
+				1F653D222823BC1300D91F92 /* PunJokeOneAnswerViewController.swift in Sources */,
+				1F653D242823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift in Sources */,
+				1F653D282823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift in Sources */,
+				1F653D2A2823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift in Sources */,
 				1F653D0E2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

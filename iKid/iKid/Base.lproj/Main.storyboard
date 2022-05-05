@@ -36,27 +36,185 @@
         <!--Pun Jokes-->
         <scene sceneID="XCT-zf-lhG">
             <objects>
-                <viewController id="Khj-Sj-MdZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="punJokeVC" id="Khj-Sj-MdZ" customClass="PunJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLZ-2S-dOb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pun Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-gb-FK8">
-                                <rect key="frame" x="167" y="199" width="79" height="21"/>
+                                <rect key="frame" x="168" y="438" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agm-w2-wea">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Next" id="ME0-Q5-Opk">
+                                        <connections>
+                                            <action selector="switchViews:" destination="Khj-Sj-MdZ" id="fVh-Pz-Xkw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u6R-yP-HWH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun Jokes" id="R5z-51-HeB"/>
+                    <connections>
+                        <outlet property="punTitle" destination="1X7-gb-FK8" id="6uy-Il-1u7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuc-Yz-XaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="75"/>
+        </scene>
+        <!--Pun Joke One Question View Controller-->
+        <scene sceneID="J2N-eH-vyL">
+            <objects>
+                <viewController storyboardIdentifier="PunQuestionOne" id="xkL-gx-6YX" customClass="PunJokeOneQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fV4-Rs-857">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doctor: Sir, I'm afraid your DNA is backwards" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFD-dL-uN2">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="u6R-yP-HWH"/>
+                        <viewLayoutGuide key="safeArea" id="z72-m7-m3f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pun Jokes" id="R5z-51-HeB"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuc-Yz-XaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAO-BM-YZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693" y="75"/>
+            <point key="canvasLocation" x="3411.594202898551" y="75"/>
+        </scene>
+        <!--Pun Joke One Answer View Controller-->
+        <scene sceneID="hh0-bs-CcJ">
+            <objects>
+                <viewController storyboardIdentifier="PunAnswerOne" id="Tca-Fs-xJz" customClass="PunJokeOneAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Mt-a5-1zR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me: &quot;AND?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-EL-G75">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b2O-gg-N1a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFs-WR-ZMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4161" y="78"/>
+        </scene>
+        <!--Pun Joke Two Question View Controller-->
+        <scene sceneID="7IS-es-I92">
+            <objects>
+                <viewController storyboardIdentifier="PunQuestionTwo" id="Dl4-Q3-GdP" customClass="PunJokeTwoQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gHb-Bb-Yjy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;I have a split personality&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seO-X6-1HH">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fGh-9N-cpr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yp0-lz-ChU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4851" y="75"/>
+        </scene>
+        <!--Pun Joke Two Answer View Controller-->
+        <scene sceneID="Z6n-a0-4Qx">
+            <objects>
+                <viewController storyboardIdentifier="PunAnswerTwo" id="C4L-JD-HsO" customClass="PunJokeTwoAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSC-1U-1cm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Said Tom, being frank" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-j8-Twa">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dJc-eN-sOM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OK-Ei-ZZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5574" y="75"/>
+        </scene>
+        <!--Pun Joke Three Question View Controller-->
+        <scene sceneID="47W-HS-41G">
+            <objects>
+                <viewController storyboardIdentifier="PunQuestionThree" id="ZJg-RW-f5a" customClass="PunJokeThreeQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wy5-1M-WtG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you make holy water?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-HQ-yQ8">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ojE-8P-oyh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzi-eQ-2Lu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6306" y="78"/>
+        </scene>
+        <!--Pun Joke Three Answer View Controller-->
+        <scene sceneID="Qof-As-N4S">
+            <objects>
+                <viewController storyboardIdentifier="PunAnswerThree" id="scG-bm-DeV" customClass="PunJokeThreeAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMl-61-WFb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You boil the hell out of it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqT-4W-UgW">
+                                <rect key="frame" x="62" y="364" width="291" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rwh-zM-Mjw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuV-Dm-lpv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7055" y="75"/>
         </scene>
         <!--Good Jokes-->
         <scene sceneID="43e-oP-8ru">
@@ -136,13 +294,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Blw-YB-t8z">
-                                <rect key="frame" x="0.0" y="792" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Item" id="FTi-x3-9zT"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iZ1-8d-wjX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPb-Gy-wG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4345" y="-603"/>
+            <point key="canvasLocation" x="4161" y="-603"/>
         </scene>
         <!--Good Jokes Two View Controller Answer-->
         <scene sceneID="WmT-AS-8aJ">
@@ -199,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzb-CJ-3rz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5034.7826086956529" y="-603.34821428571422"/>
+            <point key="canvasLocation" x="4851" y="-603"/>
         </scene>
         <!--Good Joke Three View Controller Question-->
         <scene sceneID="bbW-pr-3qR">
@@ -223,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgy-pk-2xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6027.536231884058" y="-603.34821428571422"/>
+            <point key="canvasLocation" x="5574" y="-602"/>
         </scene>
         <!--Good Joke Three View Controller Answer-->
         <scene sceneID="LUX-8p-2Fy">
@@ -247,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3g-vz-qRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6761" y="-604"/>
+            <point key="canvasLocation" x="6307" y="-603"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YRM-2a-37v">
