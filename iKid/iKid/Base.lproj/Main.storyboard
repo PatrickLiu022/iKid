@@ -11,39 +11,46 @@
         <!--Item 3-->
         <scene sceneID="UWA-5S-v2u">
             <objects>
-                <viewController title="Item 3" id="haH-39-ZMJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadJokeVC" title="Item 3" id="haH-39-ZMJ" customClass="DadJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nm3-mS-Szb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Jn-qtZ">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Next" id="YKm-kD-thV">
+                                        <connections>
+                                            <action selector="switchViews:" destination="haH-39-ZMJ" id="HWx-ab-kTK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJF-Ca-52Y">
-                                <rect key="frame" x="167" y="182" width="80" height="21"/>
+                                <rect key="frame" x="167" y="438" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Jn-qtZ">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Item" id="YKm-kD-thV"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oNY-gZ-lwu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" id="zWg-8j-UmN"/>
+                    <connections>
+                        <outlet property="dadJokeTitle" destination="IJF-Ca-52Y" id="sqa-u0-YWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1K-db-C4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="626"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke One Question View Controller-->
         <scene sceneID="NPu-cB-Rsd">
             <objects>
-                <viewController id="vnk-ul-snH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadQuestionOne" id="vnk-ul-snH" customClass="DadJokeOneQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pG8-Su-MHe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="2692.753623188406" y="779.46428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke One Answer View Controller-->
         <scene sceneID="3Ga-Lc-pKi">
             <objects>
-                <viewController id="Bci-C5-lSu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadAnswerOne" id="Bci-C5-lSu" customClass="DadJokeOneAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nED-AT-Yzs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="3411.594202898551" y="778.79464285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke Two Question View Controller-->
         <scene sceneID="qlt-Nr-RmH">
             <objects>
-                <viewController id="WIJ-Ot-dyB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadQuestionTwo" id="WIJ-Ot-dyB" customClass="DadJokeTwoQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nnX-cd-BXu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="4160.8695652173919" y="778.79464285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke Two Answer View Controller-->
         <scene sceneID="IQe-zo-Lao">
             <objects>
-                <viewController id="hcT-it-kXq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadAnswerTwo" id="hcT-it-kXq" customClass="DadJokeTwoAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRn-3H-0ZY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="4851" y="779"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke Three Question View Controller-->
         <scene sceneID="aV5-zj-chN">
             <objects>
-                <viewController id="nIS-r3-ui7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadQuestionThree" id="nIS-r3-ui7" customClass="DadJokeThreeQuestionViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Tc-72-9hn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="5573.913043478261" y="778.79464285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Dad Joke Three Answer View Controller-->
         <scene sceneID="Adp-ys-NwH">
             <objects>
-                <viewController id="wat-bN-7C6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dadAnswerThree" id="wat-bN-7C6" customClass="DadJokeThreeAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mve-fz-Bh6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
