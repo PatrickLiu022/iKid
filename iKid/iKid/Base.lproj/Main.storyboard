@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Jn-qtZ">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJF-Ca-52Y">
+                                <rect key="frame" x="167" y="437.5" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Jn-qtZ">
+                                <rect key="frame" x="307" y="769" width="87" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Next" id="YKm-kD-thV">
@@ -27,16 +33,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJF-Ca-52Y">
-                                <rect key="frame" x="167" y="438" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oNY-gZ-lwu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IJF-Ca-52Y" firstAttribute="centerY" secondItem="Nm3-mS-Szb" secondAttribute="centerY" id="7r7-wP-Ni5"/>
+                            <constraint firstItem="IJF-Ca-52Y" firstAttribute="centerX" secondItem="Nm3-mS-Szb" secondAttribute="centerX" id="uIm-5F-64q"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" id="zWg-8j-UmN"/>
                     <connections>
@@ -45,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1K-db-C4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="626"/>
+            <point key="canvasLocation" x="1753.6231884057972" y="625.44642857142856"/>
         </scene>
         <!--Dad Joke One Question View Controller-->
         <scene sceneID="NPu-cB-Rsd">
@@ -55,9 +58,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The jeweler asked me if I wanted 24 carat ring " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnx-AE-weh">
-                                <rect key="frame" x="91" y="369" width="233" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The jeweler asked me if I wanted 24 carat ring " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnx-AE-weh">
+                                <rect key="frame" x="30.5" y="438" width="353" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,7 +67,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U0m-Dw-6iX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mnx-AE-weh" firstAttribute="centerX" secondItem="pG8-Su-MHe" secondAttribute="centerX" id="1PF-Mq-bGm"/>
+                            <constraint firstItem="Mnx-AE-weh" firstAttribute="centerY" secondItem="pG8-Su-MHe" secondAttribute="centerY" id="je7-nQ-n7m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="Mnx-AE-weh" id="2DH-Jp-TiF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6S3-4l-UJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,9 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So I asked if we can do 24 potatoes instead" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="536-oc-YyY">
-                                <rect key="frame" x="69" y="369" width="277" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So I asked if we can do 24 potatoes instead" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="536-oc-YyY">
+                                <rect key="frame" x="42.5" y="438" width="329.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,6 +97,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wuv-UM-EKf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="536-oc-YyY" firstAttribute="centerX" secondItem="nED-AT-Yzs" secondAttribute="centerX" id="eqx-o5-Uj6"/>
+                            <constraint firstItem="536-oc-YyY" firstAttribute="centerY" secondItem="nED-AT-Yzs" secondAttribute="centerY" id="ho1-4x-UES"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHm-Nx-X2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,9 +115,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My daughter asked me how cats defend themselves" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-Dn-POx">
-                                <rect key="frame" x="76" y="369" width="263" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My daughter asked me how cats defend themselves" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-Dn-POx">
+                                <rect key="frame" x="9.5" y="438" width="395.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,6 +124,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ikj-gi-Kjp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dpm-Dn-POx" firstAttribute="centerX" secondItem="nnX-cd-BXu" secondAttribute="centerX" id="auH-G2-CBQ"/>
+                            <constraint firstItem="dpm-Dn-POx" firstAttribute="centerY" secondItem="nnX-cd-BXu" secondAttribute="centerY" id="tpb-cM-Uc1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te2-py-20n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,9 +142,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well obviously with catapults" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKs-DX-FdN">
-                                <rect key="frame" x="76" y="369" width="263" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well obviously with catapults" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKs-DX-FdN">
+                                <rect key="frame" x="97.5" y="438" width="219.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,6 +151,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XqX-e3-9DO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UKs-DX-FdN" firstAttribute="centerX" secondItem="vRn-3H-0ZY" secondAttribute="centerX" id="3N2-GM-Lj5"/>
+                            <constraint firstItem="UKs-DX-FdN" firstAttribute="centerY" secondItem="vRn-3H-0ZY" secondAttribute="centerY" id="86D-xL-ncg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdO-aW-rtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,9 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The barber asked if I wanted a haircut" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-LL-LhO">
-                                <rect key="frame" x="77" y="369" width="261" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The barber asked if I wanted a haircut" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-LL-LhO">
+                                <rect key="frame" x="64" y="438" width="286" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,6 +178,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J9u-6G-e8f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Qr-LL-LhO" firstAttribute="centerY" secondItem="7Tc-72-9hn" secondAttribute="centerY" id="Hx7-Dq-Phe"/>
+                            <constraint firstItem="5Qr-LL-LhO" firstAttribute="centerX" secondItem="7Tc-72-9hn" secondAttribute="centerX" id="WuD-44-TB4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2I-Wy-SG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,9 +196,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I said no, I want them all cut" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6B-E1-vt6">
-                                <rect key="frame" x="76" y="369" width="263" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I said no, I want them all cut" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6B-E1-vt6">
+                                <rect key="frame" x="102" y="438" width="210.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,6 +205,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wb7-UO-jWz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N6B-E1-vt6" firstAttribute="centerX" secondItem="mve-fz-Bh6" secondAttribute="centerX" id="Gjs-ap-hew"/>
+                            <constraint firstItem="N6B-E1-vt6" firstAttribute="centerY" secondItem="mve-fz-Bh6" secondAttribute="centerY" id="tAZ-XK-od7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8l3-6u-pOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -199,15 +223,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pun Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-gb-FK8">
-                                <rect key="frame" x="168" y="438" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agm-w2-wea">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agm-w2-wea">
+                                <rect key="frame" x="309" y="769" width="85" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Next" id="ME0-Q5-Opk">
@@ -217,9 +234,19 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pun Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-gb-FK8">
+                                <rect key="frame" x="168" y="438" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u6R-yP-HWH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1X7-gb-FK8" firstAttribute="centerY" secondItem="tLZ-2S-dOb" secondAttribute="centerY" id="22F-bw-DcU"/>
+                            <constraint firstItem="1X7-gb-FK8" firstAttribute="centerX" secondItem="tLZ-2S-dOb" secondAttribute="centerX" id="9kW-fn-Gfm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun Jokes" id="R5z-51-HeB"/>
                     <connections>
@@ -228,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nuc-Yz-XaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693" y="75"/>
+            <point key="canvasLocation" x="2692.753623188406" y="75"/>
         </scene>
         <!--Pun Joke One Question View Controller-->
         <scene sceneID="J2N-eH-vyL">
@@ -238,9 +265,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doctor: Sir, I'm afraid your DNA is backwards" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFD-dL-uN2">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor: Sir, I'm afraid your DNA is backwards" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFD-dL-uN2">
+                                <rect key="frame" x="36" y="438" width="342" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -248,6 +274,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z72-m7-m3f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LFD-dL-uN2" firstAttribute="centerX" secondItem="fV4-Rs-857" secondAttribute="centerX" id="C86-kL-kNE"/>
+                            <constraint firstItem="LFD-dL-uN2" firstAttribute="centerY" secondItem="fV4-Rs-857" secondAttribute="centerY" id="I00-V9-dCh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAO-BM-YZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,9 +292,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me: &quot;AND?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-EL-G75">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me: &quot;AND?&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-EL-G75">
+                                <rect key="frame" x="162" y="438" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -272,6 +301,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b2O-gg-N1a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OsD-EL-G75" firstAttribute="centerY" secondItem="6Mt-a5-1zR" secondAttribute="centerY" id="ZHx-Rs-GAO"/>
+                            <constraint firstItem="OsD-EL-G75" firstAttribute="centerX" secondItem="6Mt-a5-1zR" secondAttribute="centerX" id="gdl-bD-s0A"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFs-WR-ZMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -286,9 +319,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;I have a split personality&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seO-X6-1HH">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I have a split personality&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seO-X6-1HH">
+                                <rect key="frame" x="109" y="438" width="197" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -296,6 +328,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fGh-9N-cpr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="seO-X6-1HH" firstAttribute="centerY" secondItem="gHb-Bb-Yjy" secondAttribute="centerY" id="FoZ-cK-clz"/>
+                            <constraint firstItem="seO-X6-1HH" firstAttribute="centerX" secondItem="gHb-Bb-Yjy" secondAttribute="centerX" id="c1c-48-Q0l"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yp0-lz-ChU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -310,9 +346,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Said Tom, being frank" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-j8-Twa">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Said Tom, being frank" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBn-j8-Twa">
+                                <rect key="frame" x="124" y="438" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -320,6 +355,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dJc-eN-sOM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZBn-j8-Twa" firstAttribute="centerX" secondItem="aSC-1U-1cm" secondAttribute="centerX" id="THE-cn-qjH"/>
+                            <constraint firstItem="ZBn-j8-Twa" firstAttribute="centerY" secondItem="aSC-1U-1cm" secondAttribute="centerY" id="VNq-xl-h10"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3OK-Ei-ZZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -334,9 +373,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you make holy water?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-HQ-yQ8">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you make holy water?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-HQ-yQ8">
+                                <rect key="frame" x="94" y="438" width="227" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -344,6 +382,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ojE-8P-oyh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1gD-HQ-yQ8" firstAttribute="centerX" secondItem="wy5-1M-WtG" secondAttribute="centerX" id="4xp-zW-mO8"/>
+                            <constraint firstItem="1gD-HQ-yQ8" firstAttribute="centerY" secondItem="wy5-1M-WtG" secondAttribute="centerY" id="w4S-En-N4J"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzi-eQ-2Lu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -358,9 +400,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You boil the hell out of it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqT-4W-UgW">
-                                <rect key="frame" x="62" y="364" width="291" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You boil the hell out of it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqT-4W-UgW">
+                                <rect key="frame" x="115" y="438" width="184" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -368,6 +409,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rwh-zM-Mjw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nqT-4W-UgW" firstAttribute="centerX" secondItem="vMl-61-WFb" secondAttribute="centerX" id="Fq5-8j-pmQ"/>
+                            <constraint firstItem="nqT-4W-UgW" firstAttribute="centerY" secondItem="vMl-61-WFb" secondAttribute="centerY" id="LkP-1E-2UY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuV-Dm-lpv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -382,8 +427,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpt-Lt-3TZ">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpt-Lt-3TZ">
+                                <rect key="frame" x="311" y="769" width="83" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Next" id="eNt-Ml-vXq">
@@ -392,10 +437,10 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4R-I4-tvN">
-                                <rect key="frame" x="162" y="438" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4R-I4-tvN">
+                                <rect key="frame" x="161" y="438" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -403,10 +448,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6UR-dm-y7V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N4R-I4-tvN" firstAttribute="centerY" secondItem="qY9-hW-Etp" secondAttribute="centerY" id="Oah-ED-jll"/>
+                            <constraint firstItem="N4R-I4-tvN" firstAttribute="centerX" secondItem="qY9-hW-Etp" secondAttribute="centerX" id="oK0-GN-pUe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good Jokes" id="X9c-85-hAp"/>
                     <connections>
                         <outlet property="goodJokesLabel" destination="N4R-I4-tvN" id="XbX-7G-8jR"/>
+                        <outlet property="toolBarButton" destination="lpt-Lt-3TZ" id="Way-JS-uu4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qsk-sg-CkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -421,9 +471,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How is Professor Neward drinking his coffee this week?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-la-kdo">
-                                <rect key="frame" x="90" y="230" width="233" height="436"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How is Prof. Neward drinking his coffee this week?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-la-kdo">
+                                <rect key="frame" x="16" y="438" width="383" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -431,6 +480,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLG-yv-v4O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y8P-la-kdo" firstAttribute="centerY" secondItem="FwR-Vz-zcd" secondAttribute="centerY" id="UZx-y0-xY3"/>
+                            <constraint firstItem="y8P-la-kdo" firstAttribute="centerX" secondItem="FwR-Vz-zcd" secondAttribute="centerX" id="aAd-HX-48H"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeL-9h-YUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -445,9 +498,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With nautral Swedeners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-3d-ODY">
-                                <rect key="frame" x="124" y="438" width="181" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With nautral Swedeners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-3d-ODY">
+                                <rect key="frame" x="117" y="438" width="181" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -455,11 +507,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iZ1-8d-wjX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eGP-3d-ODY" firstAttribute="centerY" secondItem="CeK-lb-y0w" secondAttribute="centerY" id="0pu-4b-VHF"/>
+                            <constraint firstItem="eGP-3d-ODY" firstAttribute="centerX" secondItem="CeK-lb-y0w" secondAttribute="centerX" id="MYF-tz-TfQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chZ-4f-2Ud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3414" y="-603"/>
+            <point key="canvasLocation" x="3413.04347826087" y="-603.34821428571422"/>
         </scene>
         <!--Good Jokes Two View Controller Question-->
         <scene sceneID="7sj-AA-U78">
@@ -469,9 +525,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do iOS apps and air conditioners have in common?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyl-bP-1oQ">
-                                <rect key="frame" x="48" y="399" width="319" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do iOS apps and aircons have in common?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyl-bP-1oQ">
+                                <rect key="frame" x="24" y="438" width="367" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -479,6 +534,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t7l-bG-YWV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yyl-bP-1oQ" firstAttribute="centerX" secondItem="vWD-4F-EbE" secondAttribute="centerX" id="LjY-7Z-l9v"/>
+                            <constraint firstItem="yyl-bP-1oQ" firstAttribute="centerY" secondItem="vWD-4F-EbE" secondAttribute="centerY" id="UUI-Da-3xA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d5x-s0-ao7"/>
                 </viewController>
@@ -494,9 +553,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="They become useless when you open windows" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz3-Pa-oTW">
-                                <rect key="frame" x="51" y="398" width="311" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They become useless when you open windows" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz3-Pa-oTW">
+                                <rect key="frame" x="29" y="438" width="356" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -504,6 +562,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RbM-mr-QIb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yz3-Pa-oTW" firstAttribute="centerX" secondItem="5WO-XY-r2k" secondAttribute="centerX" id="efp-Gf-b88"/>
+                            <constraint firstItem="yz3-Pa-oTW" firstAttribute="centerY" secondItem="5WO-XY-r2k" secondAttribute="centerY" id="sdc-PT-f8J"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzb-CJ-3rz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -518,9 +580,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do aliens get vaccinated?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Up-WA-NS3">
-                                <rect key="frame" x="92" y="391" width="231" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do aliens get vaccinated?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Up-WA-NS3">
+                                <rect key="frame" x="92" y="438" width="230" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -528,6 +589,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IaL-MQ-ra2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Up-WA-NS3" firstAttribute="centerY" secondItem="qj2-UF-fca" secondAttribute="centerY" id="DIr-vm-aGr"/>
+                            <constraint firstItem="9Up-WA-NS3" firstAttribute="centerX" secondItem="qj2-UF-fca" secondAttribute="centerX" id="WBk-GG-LLF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgy-pk-2xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -542,9 +607,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With a Space Needle" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gc-dX-nud">
-                                <rect key="frame" x="125" y="399" width="165" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With a Space Needle" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gc-dX-nud">
+                                <rect key="frame" x="127" y="438" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -552,6 +616,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hdq-6x-b7U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0gc-dX-nud" firstAttribute="centerY" secondItem="yOQ-qA-cQe" secondAttribute="centerY" id="3Qv-HR-FOU"/>
+                            <constraint firstItem="0gc-dX-nud" firstAttribute="centerX" secondItem="yOQ-qA-cQe" secondAttribute="centerX" id="47Z-if-eKv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3g-vz-qRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

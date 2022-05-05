@@ -9,9 +9,10 @@ import UIKit
 
 class DadJokeOneQuestionViewController: UIViewController {
 
+    @IBOutlet weak var jokeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

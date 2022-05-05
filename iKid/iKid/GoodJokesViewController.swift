@@ -17,6 +17,7 @@ class GoodJokesViewController: UIViewController {
     var jokeThreeAnswerViewController: GoodJokeThreeViewControllerAnswer! = nil
     
     @IBOutlet weak var goodJokesLabel: UILabel!
+    @IBOutlet weak var toolBarButton: UIToolbar!
     
     @IBAction func switchViews(_ sender: Any) {
         goodJokesLabel.isHidden = true
