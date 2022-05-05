@@ -30,6 +30,13 @@
 		1F653D262823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D252823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift */; };
 		1F653D282823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D272823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift */; };
 		1F653D2A2823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D292823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift */; };
+		1F653D2C2823D43500D91F92 /* DadJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D2B2823D43500D91F92 /* DadJokeViewController.swift */; };
+		1F653D2E2823D44600D91F92 /* DadJokeOneQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D2D2823D44600D91F92 /* DadJokeOneQuestionViewController.swift */; };
+		1F653D302823D45000D91F92 /* DadJokeOneAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D2F2823D44F00D91F92 /* DadJokeOneAnswerViewController.swift */; };
+		1F653D322823D45A00D91F92 /* DadJokeTwoQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D312823D45A00D91F92 /* DadJokeTwoQuestionViewController.swift */; };
+		1F653D342823D46A00D91F92 /* DadJokeTwoAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D332823D46A00D91F92 /* DadJokeTwoAnswerViewController.swift */; };
+		1F653D362823D47400D91F92 /* DadJokeThreeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D352823D47400D91F92 /* DadJokeThreeQuestionViewController.swift */; };
+		1F653D382823D47E00D91F92 /* DadJokeThreeAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F653D372823D47E00D91F92 /* DadJokeThreeAnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +84,13 @@
 		1F653D252823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeTwoAnswerViewController.swift; sourceTree = "<group>"; };
 		1F653D272823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeThreeQuestionViewController.swift; sourceTree = "<group>"; };
 		1F653D292823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokeThreeAnswerViewController.swift; sourceTree = "<group>"; };
+		1F653D2B2823D43500D91F92 /* DadJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeViewController.swift; sourceTree = "<group>"; };
+		1F653D2D2823D44600D91F92 /* DadJokeOneQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeOneQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D2F2823D44F00D91F92 /* DadJokeOneAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeOneAnswerViewController.swift; sourceTree = "<group>"; };
+		1F653D312823D45A00D91F92 /* DadJokeTwoQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeTwoQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D332823D46A00D91F92 /* DadJokeTwoAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeTwoAnswerViewController.swift; sourceTree = "<group>"; };
+		1F653D352823D47400D91F92 /* DadJokeThreeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeThreeQuestionViewController.swift; sourceTree = "<group>"; };
+		1F653D372823D47E00D91F92 /* DadJokeThreeAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeThreeAnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +145,13 @@
 				1F1463432822499D008055FC /* SceneDelegate.swift */,
 				1F1463452822499D008055FC /* ViewController.swift */,
 				1F1463472822499D008055FC /* Main.storyboard */,
+				1F653D2B2823D43500D91F92 /* DadJokeViewController.swift */,
+				1F653D2D2823D44600D91F92 /* DadJokeOneQuestionViewController.swift */,
+				1F653D2F2823D44F00D91F92 /* DadJokeOneAnswerViewController.swift */,
+				1F653D312823D45A00D91F92 /* DadJokeTwoQuestionViewController.swift */,
+				1F653D332823D46A00D91F92 /* DadJokeTwoAnswerViewController.swift */,
+				1F653D352823D47400D91F92 /* DadJokeThreeQuestionViewController.swift */,
+				1F653D372823D47E00D91F92 /* DadJokeThreeAnswerViewController.swift */,
 				1F14634A2822499E008055FC /* Assets.xcassets */,
 				1F14634C2822499E008055FC /* LaunchScreen.storyboard */,
 				1F14634F2822499E008055FC /* Info.plist */,
@@ -302,21 +323,28 @@
 			files = (
 				1F653D062822791800D91F92 /* GoodJokesViewControllerQuestion.swift in Sources */,
 				1F653D0228226CED00D91F92 /* GoodJokesViewController.swift in Sources */,
+				1F653D322823D45A00D91F92 /* DadJokeTwoQuestionViewController.swift in Sources */,
+				1F653D2E2823D44600D91F92 /* DadJokeOneQuestionViewController.swift in Sources */,
 				1F653D0C28228F9F00D91F92 /* GoodJokesTwoViewControllerQuestion.swift in Sources */,
 				1F1463462822499D008055FC /* ViewController.swift in Sources */,
 				1F1463422822499D008055FC /* AppDelegate.swift in Sources */,
 				1F653D142823200D00D91F92 /* PunJokeViewController.swift in Sources */,
 				1F653D162823BB4500D91F92 /* PunJokeOneQuestionViewController.swift in Sources */,
 				1F653D122822955F00D91F92 /* GoodJokeThreeViewControllerAnswer.swift in Sources */,
+				1F653D382823D47E00D91F92 /* DadJokeThreeAnswerViewController.swift in Sources */,
 				1F653D04282272F100D91F92 /* GoodJokesViewControllerAnswer.swift in Sources */,
+				1F653D302823D45000D91F92 /* DadJokeOneAnswerViewController.swift in Sources */,
+				1F653D342823D46A00D91F92 /* DadJokeTwoAnswerViewController.swift in Sources */,
 				1F653D262823BC2D00D91F92 /* PunJokeTwoAnswerViewController.swift in Sources */,
 				1F653D102822955500D91F92 /* GoodJokeThreeViewControllerQuestion.swift in Sources */,
 				1F1463442822499D008055FC /* SceneDelegate.swift in Sources */,
 				1F653D222823BC1300D91F92 /* PunJokeOneAnswerViewController.swift in Sources */,
 				1F653D242823BC1C00D91F92 /* PunJokeTwoQuestionViewController.swift in Sources */,
 				1F653D282823BC6600D91F92 /* PunJokeThreeQuestionViewController.swift in Sources */,
+				1F653D362823D47400D91F92 /* DadJokeThreeQuestionViewController.swift in Sources */,
 				1F653D2A2823BC7100D91F92 /* PunJokeThreeAnswerViewController.swift in Sources */,
 				1F653D0E2822922000D91F92 /* GoodJokesTwoViewControllerAnswer.swift in Sources */,
+				1F653D2C2823D43500D91F92 /* DadJokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
