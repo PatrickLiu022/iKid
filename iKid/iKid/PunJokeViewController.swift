@@ -16,6 +16,11 @@ class PunJokeViewController: UIViewController {
     var punThreeQuestionViewController: PunJokeThreeQuestionViewController! = nil
     var punThreeAnswerViewController: PunJokeThreeAnswerViewController! = nil
     
+    var knockOneViewController: KnockKnockOneViewController! = nil
+    var knockTwoViewController: KnockKnockTwoViewController! = nil
+    var knockThreeViewController: KnockKnockThreeViewController! = nil
+    var knockFourViewController: KnockKnockFourViewController! = nil
+    
     @IBOutlet weak var punTitle: UILabel!
     
     @IBAction func switchViews(_ sender: Any) {
@@ -23,6 +28,7 @@ class PunJokeViewController: UIViewController {
         punOneBuilder()
         punTwoBuilder()
         punThreeBuilder()
+        knockKnockBuilder()
         
         UIView.beginAnimations("View Flip", context: nil)
         UIView.setAnimationDuration(0.4)
@@ -48,12 +54,34 @@ class PunJokeViewController: UIViewController {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             punThreeAnswerViewController.view.frame = super.view.frame
             switchViewController(punThreeQuestionViewController, to: punThreeAnswerViewController)
+        } else if punThreeAnswerViewController != nil && punThreeAnswerViewController?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            knockOneViewController.view.frame = super.view.frame
+            switchViewController(punThreeAnswerViewController, to: knockOneViewController)
+        } else {
+            knockKnockSwitchView()
+        }
+        UIView.commitAnimations()
+    }
+    
+    fileprivate func knockKnockSwitchView() {
+        if knockOneViewController != nil && knockOneViewController?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
+            knockTwoViewController.view.frame = super.view.frame
+            switchViewController(knockOneViewController, to: knockTwoViewController)
+        } else if knockTwoViewController != nil && knockTwoViewController?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            knockThreeViewController.view.frame = super.view.frame
+            switchViewController(knockTwoViewController, to: knockThreeViewController)
+        } else if knockThreeViewController != nil && knockThreeViewController?.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
+            knockFourViewController.view.frame = super.view.frame
+            switchViewController(knockThreeViewController, to: knockFourViewController)
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             punOneQuestionViewController.view.frame = super.view.frame
-            switchViewController(punThreeAnswerViewController, to: punOneQuestionViewController)
+            switchViewController(knockFourViewController, to: punOneQuestionViewController)
         }
-        UIView.commitAnimations()
     }
     
     override func viewDidLoad() {
@@ -89,6 +117,13 @@ class PunJokeViewController: UIViewController {
     fileprivate func punThreeBuilder() {
         punThreeQuestionBuilder()
         punThreeAnswerBuilder()
+    }
+    
+    fileprivate func knockKnockBuilder() {
+        knockOneBuilder()
+        knockTwoBuilder()
+        knockThreeBuilder()
+        knockFourBuilder()
     }
     
     fileprivate func punOneQuestionBuilder() {
@@ -142,6 +177,42 @@ class PunJokeViewController: UIViewController {
                 storyboard?
                 .instantiateViewController(withIdentifier: "PunAnswerThree")
             as? PunJokeThreeAnswerViewController
+        }
+    }
+    
+    fileprivate func knockOneBuilder() {
+        if knockOneViewController == nil {
+            knockOneViewController =
+                storyboard?
+                .instantiateViewController(withIdentifier: "KOne")
+            as? KnockKnockOneViewController
+        }
+    }
+    
+    fileprivate func knockTwoBuilder() {
+        if knockTwoViewController == nil {
+            knockTwoViewController =
+                storyboard?
+                .instantiateViewController(withIdentifier: "KTwo")
+            as? KnockKnockTwoViewController
+        }
+    }
+    
+    fileprivate func knockThreeBuilder() {
+        if knockThreeViewController == nil {
+            knockThreeViewController =
+                storyboard?
+                .instantiateViewController(withIdentifier: "KThree")
+            as? KnockKnockThreeViewController
+        }
+    }
+    
+    fileprivate func knockFourBuilder() {
+        if knockFourViewController == nil {
+            knockFourViewController  =
+                storyboard?
+                .instantiateViewController(withIdentifier: "KFour")
+            as? KnockKnockFourViewController
         }
     }
     
